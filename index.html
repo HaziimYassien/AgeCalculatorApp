@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- the main container -->
+  <div class="card">
+    <!-- the header -->
+    <header>
+      <h1>AGE CALCULATOR</h1>
+    </header>
+    <!-- requesting user to add date of birth  -->
+    <div>
+      <label>Enter your Date of Birth</label>
+      <!-- getting user input  -->
+      <input id="inputDob" type="date" value="2000-01-01" />
+    </div>
+    <br />
+
+    <!-- Take the date from which age is to be calculated -->
+    <div>
+      <label>Current Date (will display today's day)</label><br>
+      <input id="cdate" type="date" value="" />
+    </div>
+    <br />
+    <!-- button to calculate age -->
+    <button type="button" onclick="getDOB()">
+      Calculate
+    </button>
+    <br />
+    <div id="currentAge"></div>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
